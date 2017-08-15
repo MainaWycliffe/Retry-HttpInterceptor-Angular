@@ -1,0 +1,13 @@
+<h1>
+
+  <button (click)="pullData()"> Get Data </button>
+
+  <table>
+    <tr>
+      <td> User List </td>
+    </tr>
+    <tr *ngFor="let item of users; let i = index">
+      <td style="font-size: 20px;"> {{item.firstName}} </td>
+    </tr>
+  </table>
+</h1>
